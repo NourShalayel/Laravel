@@ -5,9 +5,9 @@
     <title>Best Study an Education Category Bootstrap Responsive Website Template | Home :: w3layouts</title>
     <!-- meta-tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="keywords" content="Soft Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
     <script>
         addEventListener("load", function () {
             setTimeout(hideURLbar, 0);
@@ -18,14 +18,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         }
     </script>
     <!-- //meta-tags -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- font-awesome -->
     <link href="css/font-awesome.css" rel="stylesheet">
     <!-- fonts -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    <link
+        href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
           rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
 
@@ -38,7 +40,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <link rel="stylesheet" href="../new/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="../new/css/user.css">
     <link rel="stylesheet" href="../new/w3css/w3.css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- Animate.css -->
@@ -100,21 +103,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="header-top-righ">
                 <!--					<a href="#" data-toggle="modal" data-target="#myModal2">-->
                 <!--						<span class="fa fa-sign-out" aria-hidden="true"></span>Login</a>-->
-                <li><a class="active" href="{{route('addUser')}}" data-toggle="modal"   >Sign In</a></li>
+                <li><a class="active" href="{{route('addUser')}}" data-toggle="modal">Sign In</a></li>
 
             </div>
             <div class="header-top-righ">
                 <!--                    <a href="#" data-toggle="modal" data-target="#myModal3">-->
                 <!--						<span class="fa fa-sign-out" aria-hidden="true"></span>Sign Up</a>-->
-                <li><a href="{{route('loginUser')}}" data-toggle="modal"  >Sign Up</a></li>
+                <li><a href="{{route('loginUser')}}" data-toggle="modal">Sign Up</a></li>
 
             </div>
             <!--                    <li><a class="active" href="#" data-toggle="modal" data-target="#myModal2" >Sign In</a></li>-->
             <!--                    <li><a href="#" data-toggle="modal" data-target="#myModal3" >Sign Up</a></li>-->
         </div>
-        <div class="clearfix"> </div>
+        <div class="clearfix"></div>
     </div>
-    <div class="clearfix"> </div>
+    <div class="clearfix"></div>
 </div>
 </div>
 
@@ -130,10 +133,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <h3 class="agileinfo_sign">Sign In</h3>
                     <div class="login-form">
                         <form action="#" method="post">
-                            <input id="username" type="text" name="username" class="validate" autocomplete="off" required >
-                            <input id="password" type="password" class="validate" name="password" autocomplete="off" required>
-                            <div >
-                                <input type="submit"  name="signin" value="Sign In">
+                            <input id="username" type="text" name="username" class="validate" autocomplete="off"
+                                   required>
+                            <input id="password" type="password" class="validate" name="password" autocomplete="off"
+                                   required>
+                            <div>
+                                <input type="submit" name="signin" value="Sign In">
                             </div>
                         </form>
                     </div>
@@ -162,10 +167,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <h3 class="agileinfo_sign">Sign Up</h3>
                     <div class="login-form">
                         <form action="#" method="post">
-                            <input id="username" type="text" name="username" placeholder="Username" class="validate" autocomplete="off" required >
-                            <input id="number" type="text" name="phone_number"  placeholder="Phone Number" class="validate" autocomplete="off" required >
-                            <input id="email" type="email" name="email" class="validate" placeholder="Email" autocomplete="off" required >
-                            <input id="password" type="password" name="password" placeholder="Password" class="validate" autocomplete="off" required >
+                            <input id="username" type="text" name="username" placeholder="Username" class="validate"
+                                   autocomplete="off" required>
+                            <input id="number" type="text" name="phone_number" placeholder="Phone Number"
+                                   class="validate" autocomplete="off" required>
+                            <input id="email" type="email" name="email" class="validate" placeholder="Email"
+                                   autocomplete="off" required>
+                            <input id="password" type="password" name="password" placeholder="Password" class="validate"
+                                   autocomplete="off" required>
                             <input type="submit" name="signup" value="Sign Up">
                         </form>
                     </div>
@@ -186,7 +195,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <nav class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -203,8 +213,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <nav class="link-effect-2" id="link-effect-2">
                         <ul class="nav navbar-nav">
-                            <li >
-                                <a href="{{route('indexLogin')}}" class="effect-3" >Home</a>
+                            <li>
+                                <a href="{{route('indexLogin')}}" class="effect-3">Home</a>
                             </li>
                             <li>
                                 <a href="{{route('about')}}" class="effect-3">About Us</a>
@@ -308,7 +318,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 
 
-<div id="fh5co-counter" class="fh5co-counters" style="background-image: url(../../../public/image/img_bg_4.jpg);" data-stellar-background-ratio="0.5">
+<div id="fh5co-counter" class="fh5co-counters" style="background-image: url(../../../public/image/img_bg_4.jpg);"
+     data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -316,22 +327,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="row">
                     <div class="col-md-3 col-sm-6 text-center animate-box">
                         <span class="icon"><i class="icon-bulb"></i></span>
-                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-delay='4' data-increment="1">678</div>
+                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-delay='4'
+                             data-increment="1">678
+                        </div>
                         <span class="fh5co-counter-label">Cars</span>
                     </div>
                     <div class="col-md-3 col-sm-6 text-center animate-box">
                         <span class="icon"><i class="icon-bulb"></i></span>
-                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0'  data-delay='4' data-increment="1">678</div>
+                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-delay='4'
+                             data-increment="1">678
+                        </div>
                         <span class="fh5co-counter-label">Users</span>
                     </div>
                     <div class="col-md-3 col-sm-6 text-center animate-box">
                         <span class="icon"><i class="icon-bulb"></i></span>
-                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0'  data-delay='4' data-increment="1">678</div>
+                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-delay='4'
+                             data-increment="1">678
+                        </div>
                         <span class="fh5co-counter-label">Company</span>
                     </div>
                     <div class="col-md-3 col-sm-6 text-center animate-box">
                         <span class="icon"><i class="icon-bulb"></i></span>
-                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-delay='4' data-increment="1">678</div>
+                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-delay='4'
+                             data-increment="1">678
+                        </div>
                         <span class="fh5co-counter-label">admins</span>
                     </div>
 
@@ -347,19 +366,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <br>
     <section class="menu-content">
 
-        <a >
-            <div class="sub-menu">
+        <?php
+        $i = 0;
+        ?>
+        @foreach($car as $cars)
+            @if($i >= 3)
+                    @break
+            @endif
+<?php
+$i = $i+1 ;
+?>
+            <a>
+                <div class="sub-menu">
 
 
-                <img class="card-img-top"  alt="Card image cap">
-                <h5><b> </b></h5>
-                <h6> Price_Per_Day:</h6>
-                <h6> Price_Per_KM : </h6>
-                <h6> Model :</h6>
+                    <img class="card-img-top" src="{{asset('car_image/'.$cars->image)}}" alt="Card image cap">
+                    <h5><b></b></h5>
+                    <h6> Name : {{$cars->name}} </h6>
+                    <h6> Price_Per_Day: {{$cars->price_per_day}} </h6>
+                    <h6> Price_Per_KM :{{$cars->price_per_km}}</h6>
+                    <h6> Model :{{$cars->model}}</h6>
 
 
-            </div>
-        </a>
+                </div>
+            </a>
+        @endforeach
 
     </section>
 
@@ -378,11 +409,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
             <div class="modal-body">
                 <div class="model-img-info">
-                    <img src="image/e1.jpg" alt="" />
-                    <p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque
-                        ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in dapibus turpis
-                        porttitor quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper. Cras tempor massa
-                        luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed finibus sem</p>
+                    <img src="image/e1.jpg" alt=""/>
+                    <p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio
+                        eget nunc. Pellentesque
+                        ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor
+                        enim, in dapibus turpis
+                        porttitor quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus ultrices
+                        ullamcorper. Cras tempor massa
+                        luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed
+                        finibus sem</p>
                 </div>
             </div>
         </div>
@@ -411,7 +446,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="three_testimonials_grid_main">
                     <div class="col-xs-3 three_testimonials_grid_pos">
                         <div class="grid-test-allah-agile">
-                            <img src="image/te1.jpg" alt=" " class="img-responsive" />
+                            <img src="image/te1.jpg" alt=" " class="img-responsive"/>
                         </div>
                     </div>
                     <div class="col-xs-9 three_testimonials_grid">
@@ -420,18 +455,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <p>Client 1</p>
                         </div>
                         <p>
-                            Donec laoreet eu purus eu viverra. Vestibulum sed convallis massa, eu aliquet massa. Suspendisse lacinia rutrum tincidunt.
+                            Donec laoreet eu purus eu viverra. Vestibulum sed convallis massa, eu aliquet massa.
+                            Suspendisse lacinia rutrum tincidunt.
                             Integer id erat porta, convallis.
                         </p>
                     </div>
-                    <div class="clearfix"> </div>
+                    <div class="clearfix"></div>
                 </div>
             </li>
             <li>
                 <div class="three_testimonials_grid_main">
                     <div class="col-xs-3 three_testimonials_grid_pos">
                         <div class="grid-test-allah-agile">
-                            <img src="image/te2.jpg" alt=" " class="img-responsive" />
+                            <img src="image/te2.jpg" alt=" " class="img-responsive"/>
                         </div>
                     </div>
                     <div class="col-xs-9 three_testimonials_grid">
@@ -440,18 +476,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <p>Client 2</p>
                         </div>
                         <p>
-                            Donec laoreet eu purus eu viverra. Vestibulum sed convallis massa, eu aliquet massa. Suspendisse lacinia rutrum tincidunt.
+                            Donec laoreet eu purus eu viverra. Vestibulum sed convallis massa, eu aliquet massa.
+                            Suspendisse lacinia rutrum tincidunt.
                             Integer id erat porta, convallis.
                         </p>
                     </div>
-                    <div class="clearfix"> </div>
+                    <div class="clearfix"></div>
                 </div>
             </li>
             <li>
                 <div class="three_testimonials_grid_main">
                     <div class="col-xs-3 three_testimonials_grid_pos">
                         <div class="grid-test-allah-agile">
-                            <img src="image/te3.jpg" alt=" " class="img-responsive" />
+                            <img src="image/te3.jpg" alt=" " class="img-responsive"/>
                         </div>
                     </div>
                     <div class="col-xs-9 three_testimonials_grid">
@@ -460,11 +497,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <p>Client 3</p>
                         </div>
                         <p>
-                            Donec laoreet eu purus eu viverra. Vestibulum sed convallis massa, eu aliquet massa. Suspendisse lacinia rutrum tincidunt.
+                            Donec laoreet eu purus eu viverra. Vestibulum sed convallis massa, eu aliquet massa.
+                            Suspendisse lacinia rutrum tincidunt.
                             Integer id erat porta, convallis.
                         </p>
                     </div>
-                    <div class="clearfix"> </div>
+                    <div class="clearfix"></div>
                 </div>
             </li>
 

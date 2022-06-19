@@ -29,45 +29,44 @@
                 <th>Actions</th>
             </tr>
 
+            @foreach($admin as $admins)
 
-{{--<!--            --><?php--}}
-{{--//            $sql = "select * from admin";--}}
-{{--//            $result = mysqli_query($conn, $sql);--}}
-{{--//            if ($result && $result->num_rows > 0) {--}}
-{{--//                while ($admin = $result->fetch_assoc()) {--}}
-{{--//                    echo "<tr>";--}}
-{{--//--}}
-{{--//                    $id = $admin['id'];--}}
-{{--//                    $userName = $admin['username'];--}}
-{{--//                    $email = $admin['email'];--}}
-{{--//--}}
-{{--//                    echo "<td> $id </td>";--}}
-{{--//                    echo "<td> $userName </td>";--}}
-{{--//                    echo "<td> $email </td>";--}}
-{{--//                    echo "--}}
-{{--//                           <td>--}}
-{{--//                        <a href=\"update_admin.php?id=$id\" class=\"btn-secondary\"> update </a> &nbsp;--}}
-{{--//                        <a href=\"delete_admin.php?id=$id\" class=\"btn-danger\"> delete </a>&nbsp;--}}
-{{--//--}}
-{{--//                    </td>--}}
-{{--//                        ";--}}
-{{--//                    echo "</tr>";--}}
-{{--//                }--}}
-{{--//            } else {--}}
-{{--//                echo "--}}
-{{--//            <tr>--}}
-{{--//                <td>--}}
-{{--//                    <p> no admin yet ! </p>--}}
-{{--//                </td>--}}
-{{--//            </tr>--}}
-{{--//               ";--}}
-{{--//            }--}}
-{{--//            ?>--}}
+                <td>  {{$admins->id}} </td>
+                <td>  {{$admins->name}} </td>
+                <td>  {{$admins->email}} </td>
 
 
+
+                <td>
+                    <form method="post" action="{{route('admins.destroy',$admins)}}">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger btn-sm">
+
+                            <i class="fas fa-trash">
+                            </i>
+                            Delete
+                        </button>
+                    </form>
+
+                </td>
+
+                </tr>
+
+
+            @endforeach
         </table>
+
+        {{--                <tr>--}}
+        {{--                    <td>--}}
+        {{--                        <p>--}}
+        {{--                            {{$cars->name ?? 'No Car!!'}}--}}
+
+        {{--                        </p>--}}
+        {{--                    </td>--}}
+        {{--                </tr>--}}
+        {{--            </table>--}}
 
     </div>
 </div>
-<!-- Main Content Setion Ends -->
 @endsection

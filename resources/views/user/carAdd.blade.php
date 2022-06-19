@@ -179,7 +179,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                     <div class="form-group">
                         <div class="col-sm-10 col-sm-offset-2">
-                            <input type="submit" value="Create New Post" class="btn btn-success float-right">
+                            <input type="submit" value="Create New Car" class="btn btn-success float-right">
                         </div>
                     </div>
 

@@ -9,21 +9,24 @@
     <br>
     <section class="menu-content">
 
+        @foreach($car as $cars)
         <a >
             <div class="sub-menu">
 
 
-                <img class="card-img-top" src="" alt="Card image cap">
+                <img class="card-img-top" src="{{asset('car_image/'.$cars->image)}}" alt="Card image cap">
                 <h5><b></b></h5>
-                <h6> Price_Per_Day: </h6>
-                <h6> Price_Per_KM :</h6>
-                <h6> Model :</h6>
+                <h6> Name : {{$cars->name}} </h6>
+                <h6> Price_Per_Day: {{$cars->price_per_day}} </h6>
+                <h6> Price_Per_KM :{{$cars->price_per_km}}</h6>
+                <h6> Model :{{$cars->model}}</h6>
 
 
             </div>
         </a>
+        @endforeach
 
-        <h1> No cars available :( </h1>
+{{--        <h1> No cars available :( </h1>--}}
 
     </section>
 

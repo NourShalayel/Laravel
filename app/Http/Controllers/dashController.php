@@ -2,7 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\admin;
+use App\Models\car;
+use App\Models\company;
+use App\Models\User;
 use Illuminate\Http\Request;
+
 
 class dashController extends Controller
 {
@@ -16,19 +21,24 @@ class dashController extends Controller
     }
     function showAdmin()
     {
-        return view('admin.show_admin');
+        $admin = admin::all();
+        return view('admin.show_admin', compact('admin'));
+//        return view('admin.show_admin');
     }
     function showAdminCar()
     {
-        return view('admin.show_car');
+        $car = car::all();
+        return view('admin.show_car', compact('car'));
     }
     function showAdminCompany()
     {
-        return view('admin.show_company');
+        $company = company::all();
+        return view('admin.show_company', compact('company'));
     }
     function showUser()
     {
-        return view('admin.show_user');
+        $user = User::all();
+        return view('admin.show_user', compact('user'));
     }
     function updateAdmin()
     {
@@ -42,7 +52,6 @@ class dashController extends Controller
     {
         return view('auth.login_admin');
     }
-
     function loginUser()
     {
         return view('auth.login_user');

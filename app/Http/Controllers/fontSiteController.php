@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\car;
 use App\Models\company;
 use Illuminate\Http\Request;
 
@@ -9,7 +10,8 @@ class fontSiteController extends Controller
 {
     function showHome()
     {
-        return view("user.indexLogin");
+        $car = car::all();
+        return view("user.indexLogin" ,compact('car') );
     }
 
     function showAboutUs()
@@ -19,13 +21,16 @@ class fontSiteController extends Controller
 
     function showCompany()
     {
-        return view("user.companyList");
+        $company = company::all();
+        return view('user.companyList', compact('company'));
+//        return view("user.companyList");
     }
 
     function showCars()
     {
-
-        return view('user.carList');
+        $car = car::all();
+        return view('user.carList', compact('car'));
+//        return view('user.carList');
     }
 
     function showAddCars()

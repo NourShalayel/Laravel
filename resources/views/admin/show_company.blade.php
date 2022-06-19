@@ -25,62 +25,71 @@
             <tr>
                 <th>S.N.</th>
                 <th>Name</th>
-                <th>Number</th>
+                <th>Code</th>
                 <th>Contact</th>
                 <th>Email</th>
                 <th>Address</th>
-                <th>Gender</th>
+                <th>Age</th>
                 <th>Actions</th>
 
             </tr>
 
 
-{{--<!--            --><?php--}}
-{{--//            $sql = "select * from company";--}}
-{{--//            $result = mysqli_query($conn, $sql);--}}
-{{--//            if ($result && $result->num_rows > 0) {--}}
-{{--//                while ($company= $result->fetch_assoc()) {--}}
-{{--//                    echo "<tr>";--}}
-{{--//--}}
-{{--//                    $id = $company['id'];--}}
-{{--//                    $name = $company['name'];--}}
-{{--//                    $number = $company['number'];--}}
-{{--//                    $contact = $company['contact'];--}}
-{{--//                    $email = $company['email'];--}}
-{{--//                    $address = $company['address'];--}}
-{{--//                    $age = $company['age'];--}}
-{{--//--}}
-{{--//                    echo "<td> $id </td>";--}}
-{{--//                    echo "<td> $name </td>";--}}
-{{--//                    echo "<td> $number </td>";--}}
-{{--//                    echo "<td> $contact </td>";--}}
-{{--//                    echo "<td> $email </td>";--}}
-{{--//                    echo "<td> $address </td>";--}}
-{{--//                    echo "<td> $age </td>";--}}
-{{--//                    echo "--}}
-{{--//                           <td>--}}
-{{--//                        <a href=\"delete_company.php?id=$id\" class=\"btn-danger\"> delete </a>&nbsp;--}}
-{{--//--}}
-{{--//                    </td>--}}
-{{--//                        ";--}}
-{{--//                    echo "</tr>";--}}
-{{--//                }--}}
-{{--//            } else {--}}
-{{--//                echo "--}}
-{{--//            <tr>--}}
-{{--//                <td>--}}
-{{--//                    <p> no Company yet ! </p>--}}
-{{--//                </td>--}}
-{{--//            </tr>--}}
-{{--//               ";--}}
-{{--//            }--}}
-{{--//            ?>--}}
+            @foreach($company as $companies)
+
+                <td>  {{$companies->id}} </td>
+                <td>  {{$companies->name}} </td>
+                <td>  {{$companies->code}} </td>
+                <td>  {{$companies->contact}} </td>
+                <td>  {{$companies->email}} </td>
+                <td>  {{$companies->address}} </td>
+                <td>  {{$companies->age}} </td>
+{{--                <td>--}}
+{{--                    <img alt="Image" class="table-avatar" style=" border-radius: 2%; display: inline;width: 4rem;"--}}
+{{--                         src="{{asset('company_image/'.$companies->image)}}">--}}
+
+{{--                </td>--}}
 
 
+
+                <td>
+                    <a class="btn btn-info btn-sm" href="{{route('company.edit',$companies)}}">
+                        <i class="fas fa-pencil-alt">
+                        </i>
+                        Edit
+                    </a>
+                </td>
+                <td>
+                    <form method="post" action="{{route('company.destroy',$companies)}}">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger btn-sm">
+
+                            <i class="fas fa-trash">
+                            </i>
+                            Delete
+                        </button>
+
+
+                    </form>
+
+                </td>
+
+                </tr>
+
+                @endforeach
         </table>
+
+        {{--                <tr>--}}
+        {{--                    <td>--}}
+        {{--                        <p>--}}
+        {{--                            {{$cars->name ?? 'No Car!!'}}--}}
+
+        {{--                        </p>--}}
+        {{--                    </td>--}}
+        {{--                </tr>--}}
+        {{--            </table>--}}
 
     </div>
 </div>
-<!-- Main Content Setion Ends -->
-
 @endsection

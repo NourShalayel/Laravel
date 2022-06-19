@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\company;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -11,6 +12,13 @@ use function view;
 
 class userController extends Controller
 {
+
+    public function index()
+    {
+
+        $user = User::all();
+        return view('show_user', compact('user'));
+    }
     public function create()
     {
         $user = User::all();
@@ -53,5 +61,11 @@ class userController extends Controller
 
         return redirect()->back()->with('success', 'New admin Created successfully');
 
+    }
+
+    public function destroy(User $user)
+    {
+        $user->delete();
+        return redirect()->route('showUser');
     }
 }

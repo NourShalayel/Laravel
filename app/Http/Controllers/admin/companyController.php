@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\car;
 use App\Models\company;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -11,6 +12,16 @@ use function view;
 
 class companyController extends Controller
 {
+
+
+    public function index()
+    {
+
+        $company = company::all();
+        return view('show_company', compact('company'));
+    }
+
+
 
     public function create()
     {
@@ -48,16 +59,22 @@ class companyController extends Controller
         $company->address = $request->address;
         $company->age = $request->age;
         $company->description = $request->description;
-        $company->image = $request->image;
-//
-//        $image = $request->file('image');
-//        $file_name=$company->name.time().'.'.$image->extension();
-//        $image->move('image',$file_name);
+
+
+        $company_image = $request->file('image');
+
+        $file_name=$company->name.time().'.'.$company_image->extension();
+        $company_image->move('company_image',$file_name);
+        $company->image=$file_name;
 
         $company->save();
 
-        return redirect()->back()->with('success', 'New Car Created successfully');
+        return redirect()->back()->with('success', 'New Company Created successfully');
 
     }
-
+    public function destroy(company $company)
+    {
+        $company->delete();
+        return redirect()->route('showAdmin');
+    }
 }

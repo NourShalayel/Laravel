@@ -1,10 +1,10 @@
 <?php
 
+use App\Http\Controllers\admin\adminController;
 use App\Http\Controllers\admin\carController;
-use App\Http\Controllers\admin\userController;
 use App\Http\Controllers\admin\companyController;
+use App\Http\Controllers\admin\userController;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\dashboard\adminController;
 use App\Http\Controllers\dashController;
 use App\Http\Controllers\fontSiteController;
 use Illuminate\Support\Facades\Route;
@@ -63,7 +63,7 @@ Route::get('/aboutWeb',[fontSiteController::class , 'showAboutUs'] )->name('abou
 Route::get('/companyList',[fontSiteController::class , 'showCompany'] )->name('companyList');
 Route::get('/carList',[fontSiteController::class , 'showCars'] )->name('carList');
 Route::get('/carAdd',[fontSiteController::class , 'showAddCars'] )->name('carAdd');
-Route::get('/CompanyAdd',[fontSiteController::class , 'showAddCompany'] )->name('CompanyAdd');
+Route::get('/companyadd',[fontSiteController::class , 'showAddCompany'] )->name('CompanyAdd');
 Route::get('/contact',[fontSiteController::class , 'showContactUs'] )->name('contact');
 
 
@@ -108,5 +108,7 @@ Route::get('/car',[carController::class,'store']);
 Route::resource('/admins',adminController::class);
 Route::get('/admins',[adminController::class,'store']);
 
-Route::resource('/clients',userController::class);
-Route::get('/clients',[userController::class,'store']);
+Route::resource('/users',userController::class);
+Route::get('/users',[userController::class,'store']);
+
+Route::get('/users',[userController::class,'destroy'])->name('destroy');

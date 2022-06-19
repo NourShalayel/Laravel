@@ -281,18 +281,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
 
+
+
+        @foreach($company as $companies)
         <div class="blog-info">
             <div class="col-xs-4 blog-grid-img">
-{{--                <img src="<?php  echo $logo ?>" class="img-responsive" alt="" />--}}
+                <img src="{{asset('company_image/'.$companies->image)}}" class="img-responsive" alt="" />
             </div>
             <div class="col-xs-8 blog-grid-text">
-{{--                <h4><?php echo $name  ?></h4>--}}
-{{--                <h6><?php echo $address  ?></h6>--}}
-{{--                <p><?php echo $description ?></p>--}}
+                <h4>{{$companies->name}}</h4>
+                <h6>{{$companies->address}}</h6>
+                <p>{{$companies->description}}</p>
             </div>
             <div class="clearfix"> </div>
         </div>
-
+        @endforeach
 
 
     </div>

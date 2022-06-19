@@ -22,10 +22,57 @@
         <br/>
 
 
+        <table class="tbl-full">
+            <tr>
+                <th>S.N.</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Actions</th>
 
+            </tr>
+
+            @foreach($user as $users)
+
+                <td>  {{$users->id}} </td>
+                <td>  {{$users->name}} </td>
+                <td>  {{$users->email}} </td>
+                <td>  {{$users->phone}} </td>
+
+
+
+                <td>
+                    <form method="post" action="{{route('users.destroy',$users)}}">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger btn-sm">
+
+                            <i class="fas fa-trash">
+                            </i>
+                            Delete
+                        </button>
+
+
+                    </form>
+
+                </td>
+
+                </tr>
+
+
+        @endforeach
         </table>
+
+        {{--                <tr>--}}
+        {{--                    <td>--}}
+        {{--                        <p>--}}
+        {{--                            {{$cars->name ?? 'No Car!!'}}--}}
+
+        {{--                        </p>--}}
+        {{--                    </td>--}}
+        {{--                </tr>--}}
+        {{--            </table>--}}
 
     </div>
 </div>
-<!-- Main Content Setion Ends -->
 @endsection
