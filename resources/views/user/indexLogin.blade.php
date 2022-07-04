@@ -103,13 +103,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="header-top-righ">
                 <!--					<a href="#" data-toggle="modal" data-target="#myModal2">-->
                 <!--						<span class="fa fa-sign-out" aria-hidden="true"></span>Login</a>-->
-                <li><a class="active" href="{{route('addUser')}}" data-toggle="modal">Sign In</a></li>
+                <li><a class="active" href="{{route('loginUser')}}" data-toggle="modal">Sign In</a></li>
 
             </div>
             <div class="header-top-righ">
                 <!--                    <a href="#" data-toggle="modal" data-target="#myModal3">-->
                 <!--						<span class="fa fa-sign-out" aria-hidden="true"></span>Sign Up</a>-->
-                <li><a href="{{route('loginUser')}}" data-toggle="modal">Sign Up</a></li>
+                <li><a href="{{route('addUser')}}" data-toggle="modal">Sign Up</a></li>
 
             </div>
             <!--                    <li><a class="active" href="#" data-toggle="modal" data-target="#myModal2" >Sign In</a></li>-->
@@ -328,28 +328,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="col-md-3 col-sm-6 text-center animate-box">
                         <span class="icon"><i class="icon-bulb"></i></span>
                         <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-delay='4'
-                             data-increment="1">678
+                             data-increment="1">7
                         </div>
                         <span class="fh5co-counter-label">Cars</span>
                     </div>
                     <div class="col-md-3 col-sm-6 text-center animate-box">
                         <span class="icon"><i class="icon-bulb"></i></span>
                         <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-delay='4'
-                             data-increment="1">678
+                             data-increment="1">3
                         </div>
                         <span class="fh5co-counter-label">Users</span>
                     </div>
                     <div class="col-md-3 col-sm-6 text-center animate-box">
                         <span class="icon"><i class="icon-bulb"></i></span>
                         <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-delay='4'
-                             data-increment="1">678
+                             data-increment="1">5
                         </div>
                         <span class="fh5co-counter-label">Company</span>
                     </div>
                     <div class="col-md-3 col-sm-6 text-center animate-box">
                         <span class="icon"><i class="icon-bulb"></i></span>
                         <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-delay='4'
-                             data-increment="1">678
+                             data-increment="1">2
                         </div>
                         <span class="fh5co-counter-label">admins</span>
                     </div>
@@ -376,7 +376,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <?php
 $i = $i+1 ;
 ?>
-            <a>
+            <a href="{{route('order')}}">
                 <div class="sub-menu">
 
 

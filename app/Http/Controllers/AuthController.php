@@ -53,6 +53,8 @@ class AuthController extends Controller
         if (Auth::attempt($log)) {
             return redirect()->route('indexLogin');
         } else {
-            dd($log);
+            return "password error";
+
         }
-    }}
+
+}}

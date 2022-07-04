@@ -316,22 +316,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="row">
                     <div class="col-md-3 col-sm-6 text-center animate-box">
                         <span class="icon"><i class="icon-bulb"></i></span>
-                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-delay='4' data-increment="1">678</div>
+                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-delay='4' data-increment="1">7</div>
                         <span class="fh5co-counter-label">Cars</span>
                     </div>
                     <div class="col-md-3 col-sm-6 text-center animate-box">
                         <span class="icon"><i class="icon-bulb"></i></span>
-                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0'  data-delay='4' data-increment="1">678</div>
+                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0'  data-delay='4' data-increment="1">3</div>
                         <span class="fh5co-counter-label">Users</span>
                     </div>
                     <div class="col-md-3 col-sm-6 text-center animate-box">
                         <span class="icon"><i class="icon-bulb"></i></span>
-                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0'  data-delay='4' data-increment="1">678</div>
+                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0'  data-delay='4' data-increment="1">6</div>
                         <span class="fh5co-counter-label">Company</span>
                     </div>
                     <div class="col-md-3 col-sm-6 text-center animate-box">
                         <span class="icon"><i class="icon-bulb"></i></span>
-                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-delay='4' data-increment="1">678</div>
+                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-delay='4' data-increment="1">2</div>
                         <span class="fh5co-counter-label">admins</span>
                     </div>
 

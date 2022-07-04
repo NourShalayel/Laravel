@@ -5,6 +5,9 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use App\Models\company;
 use App\Models\User;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Illuminate\Foundation\Bus\DispatchesJobs;
+use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use function redirect;
@@ -12,6 +15,7 @@ use function view;
 
 class userController extends Controller
 {
+    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     public function index()
     {
@@ -59,7 +63,7 @@ class userController extends Controller
 
         $user->save();
 
-        return redirect()->back()->with('success', 'New admin Created successfully');
+        return redirect()->back()->with('success', 'New User Created successfully');
 
     }
 

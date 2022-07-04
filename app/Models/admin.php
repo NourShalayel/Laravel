@@ -7,12 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class admin extends Model
 {
-    use HasFactory;
+    use  HasFactory;
 
     protected $fillable = [
         'id',
         'name',
         'email',
         'password',
+        'role_as'
     ];
 }

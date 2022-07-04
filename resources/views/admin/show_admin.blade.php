@@ -42,12 +42,17 @@
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger btn-sm">
-
                             <i class="fas fa-trash">
                             </i>
                             Delete
                         </button>
                     </form>
+                    <br>
+                    <a class="btn btn-info btn-sm" href="{{route('updateAdmin',$admins)}}">
+                        <i class="fas fa-pencil-alt">
+                        </i>
+                        Update
+                    </a>
 
                 </td>
 

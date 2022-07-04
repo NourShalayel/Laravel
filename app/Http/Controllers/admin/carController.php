@@ -82,4 +82,11 @@ class carController extends Controller
         $car->delete();
         return redirect()->route('showAdminCar');
     }
+
+    public function show(Request $request, $id)
+    {
+        $value = $request->session()->get('key');
+
+        //
+    }
 }

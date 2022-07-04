@@ -3,6 +3,7 @@
 use App\Http\Controllers\admin\adminController;
 use App\Http\Controllers\admin\carController;
 use App\Http\Controllers\admin\companyController;
+use App\Http\Controllers\admin\orderController;
 use App\Http\Controllers\admin\userController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\dashController;
@@ -24,6 +25,11 @@ Route::get('/', function () {
     return view('user.indexLogin');
 });
 
+//Route::get('/conform', function () {
+//    return view('user.conform_order');
+//})->name('conform');
+
+
 //
 //Route::get('/aboutWeb', function () {
 //    return view('user.index')->name('index');
@@ -39,9 +45,9 @@ Route::get('/', function () {
 //});
 //
 //
-//Route::get('/carList', function () {
-//    return view('user.carList')->name('carList');
-//});
+Route::get('/update', function () {
+    return view('admin.update_admin');
+});
 //
 //
 //Route::get('/carAdd', function () {
@@ -65,6 +71,8 @@ Route::get('/carList',[fontSiteController::class , 'showCars'] )->name('carList'
 Route::get('/carAdd',[fontSiteController::class , 'showAddCars'] )->name('carAdd');
 Route::get('/companyadd',[fontSiteController::class , 'showAddCompany'] )->name('CompanyAdd');
 Route::get('/contact',[fontSiteController::class , 'showContactUs'] )->name('contact');
+Route::get('/order',[fontSiteController::class , 'order'] )->name('order');
+Route::get('/conformOrder',[fontSiteController::class , 'conformOrder'] )->name('conformOrder');
 
 
 Route::get('/addadmin',[dashController::class , 'addAdmin'] )->name('addAdmin');
@@ -91,7 +99,8 @@ Route::prefix('admin')->middleware('auth')->group(function(){
     Route::resource('/company',companyController::class);
     Route::resource('/car',carController::class);
     Route::resource('/admins',adminController::class);
-    Route::resource('/clients',userController::class);
+    Route::resource('/users',userController::class);
+    Route::resource('/orders',orderController::class);
 
 });
 
@@ -107,8 +116,17 @@ Route::get('/car',[carController::class,'store']);
 
 Route::resource('/admins',adminController::class);
 Route::get('/admins',[adminController::class,'store']);
+Route::get('/admins',[adminController::class,'update']);
 
 Route::resource('/users',userController::class);
 Route::get('/users',[userController::class,'store']);
 
+
+Route::resource('/orders',orderController::class);
+Route::get('/orders',[orderController::class,'store']);
+
+
 Route::get('/users',[userController::class,'destroy'])->name('destroy');
+Route::get('/users',[userController::class,'update'])->name('update');
+
+

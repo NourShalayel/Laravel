@@ -25,6 +25,8 @@ class dashController extends Controller
         return view('admin.show_admin', compact('admin'));
 //        return view('admin.show_admin');
     }
+
+
     function showAdminCar()
     {
         $car = car::all();
@@ -42,7 +44,8 @@ class dashController extends Controller
     }
     function updateAdmin()
     {
-        return view('admin.update_admin');
+        $admin = admin::all();
+        return view('admin.update_admin', compact('admin'));
     }
     function updateUser()
     {

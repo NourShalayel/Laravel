@@ -3,7 +3,7 @@
 @section('content')
     @include('admin.layout.message')
 
-    <form class="form-horizontal" action="{{route('clients.store')}}" method="post" enctype="multipart/form-data">
+    <form class="form-horizontal" action="{{route('users.store')}}" method="post" enctype="multipart/form-data">
         @csrf
         <main class="mn-inner mt-5">
             <div class="row d-flex justify-content-center align-items-center">

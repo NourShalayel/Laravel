@@ -51,4 +51,16 @@ class fontSiteController extends Controller
 
         return view('user.contact');
     }
+
+    function order()
+    {
+        $car = car::all();
+        return view('user.order');
+    }
+
+    function conformOrder()
+    {
+        $car = car::all();
+        return view('user.conform_order');
+    }
 }

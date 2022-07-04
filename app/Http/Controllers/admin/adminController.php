@@ -5,6 +5,7 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use App\Models\admin;
 use App\Models\company;
+use App\Models\post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use function redirect;
@@ -15,7 +16,6 @@ class adminController extends Controller
 
     public function index()
     {
-
         $admin = admin::all();
         return view('show_admin', compact('admin'));
     }
@@ -59,6 +59,16 @@ class adminController extends Controller
 
         return redirect()->back()->with('success', 'New admin Created successfully');
 
+    }
+
+    public function update(Request $request, admin $admin)
+    {
+        $admin->name = $request->name;
+        $admin->email = $request->email;
+        $admin->password = $request->password;
+        $admin->save();
+
+//        return redirect()->route('showAdmin');
     }
 
     public function destroy(admin $admin)
